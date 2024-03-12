@@ -1,0 +1,11 @@
+body {
+    background-image: url(/images/gif_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.tit {
+    color: darkblue;
+   font-family: fantasy;
+   text-shadow: 1px 2px 3px grey;
+}

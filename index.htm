@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade-Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section id="body" class="align-middle">
+        <div class="container container-fluid ps-3 pt-1 mb-4">
+            <h2 class="tit fs-2">
+               GRADE-CHECKER
+            </h2>
+        </div>
+        <div class="container-fluid text-center mb-4">
+            <span class="tt" data-bs-placement="right" title="HELLO, Enter Your Grade">
+                <img src="./images/tea_1.png" class="w-1oo" alt="Teacher" />
+            </span>
+        </div>
+        <div class="checkbox container text-center mb-3 p-2">
+            <label for="">
+                <input type="number" placeholder="Enter Your Score" class="text-center rounded-3 px-4 py-2 bg-light" id="score" name="score">
+                <button onclick="checkScore()" class="bg-light rounded-3 px-4 py-2">CHECK</button>
+            </label>
+            <br>
+            <div class="my-4" id="res">
+                <p>YOUR GRADE</p>
+            </div>
+            <button onclick="reset()" class="text-center rounded-3 px-4 py-2 bg-light">RESET</button>
+        </div>
+        <marquee behavior="scroll" direction="right to left">Nerd official grade checker web page</marquee>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll(".tt");
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t);
+        });
+    </script>
+
+</html>
